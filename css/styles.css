@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapperIndex {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/papel.jpg);
+  color: #000000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.brand {
+    margin-top: -4px;
+}
+
+.brand img{
+    width: 70%;
+}
+
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+
+.menu  li {
+  list-style: none;
+
+}
+.menu a {
+  color: #050505;
+  text-decoration: none;
+  padding: 10px 20px; 
+}
+
+.menu li:hover a{
+  background-color: rgba(57, 142, 221, 0.377);
+  color: #3e4cb9;
+  border-radius: 50%;
+}
+
+.menu .active {
+  color: rgb(247, 171, 7);
+  text-shadow: #000000;
+}
+
+
+.menu li a:hover {
+  color: #66E7C8;
+}
+
+.toggleMenu{
+    display: none;
+}
+
+.info-content .sotial-networks1 {
+    display: none;
+}
+
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+.main img {
+    border:  7px solid rgb(158, 157, 153);
+    width: 300px;
+    height: 441px;
+    box-shadow: 0 0 10px #000000;
+}
+
+h1 {
+  font-size: clamp(4vw, 1.5em, 3em)  
+}
+
+p{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.info-content span {
+  color: rgb(230, 131, 19);
+}
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: rgb(21, 61, 61);
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+}
+
+.download-cv:hover {
+  background-color: azure;
+  box-shadow: none;
+}
+
+
+.wrapperAbout {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/papel.jpg);   
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100%;
+    align-items: center;
+}
+  
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+  padding: 3em;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+  box-shadow: 0 10px 10px #000000;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: #191c32;
+}
+
+.divider {
+  height: 4px;
+  width: 150px;
+  background-color: rgb(241, 176, 35);
+  margin-top: 5px;
+  margin-bottom: 2em;
+  box-shadow: 0 0 10px #000000;
+}
+
+.about p {
+  margin-bottom: 1em;
+}
+
+.wrapperArte {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/papel.jpg);
+    color: #000000;
+}
+
+.wrapperDiseño {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/papel.jpg);
+    color: #000000;
+}
+
+.portfolio,
+.contact-section {
+  width: 100%;
+  background-color: #6983aa;
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+  padding-top: 5px;
+}
+
+.portfolio .container {
+  width: 80%; 
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  background-color: #2b3058;
+  margin: 1em;  
+}
+
+.card__img1 {
+  width: 100%;
+  height: 150px;
+  background-image: url(../imagenes/portfolio1.png);
+  background-size: cover;
+}
+
+.card__img2 {
+    width: 100%;
+    height: 150px;
+    background-image: url(../imagenes/portfolio2.png);
+    background-size: cover;
+}
+
+.card__img3 {
+    width: 100%;
+    height: 150px;
+    background-image: url(../imagenes/portfolio3.png);
+    background-size: cover;
+}
+
+.card__img4 {
+    width: 100%;
+    height: 150px;
+    background-image: url(../imagenes/portfolio4.png);
+    background-size: cover;
+}
+  
+.card__img5 {
+      width: 100%;
+      height: 150px;
+      background-image: url(../imagenes/portfolio5.png);
+      background-size: cover;
+}
+  
+.card__img6 {
+      width: 100%;
+      height: 150px;
+      background-image: url(../imagenes/portfolio6.png);
+      background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.wrapperContact {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/papel.jpg);
+    color: #000000;
+}
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+
+.contact-section img {
+  width: 500px;
+  height: 230px;
+  bottom: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+  margin-left: 6em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: aqua;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  padding: 2em;
+  background-color: rgb(158, 157, 153);
+}
+
+.footer-content h2 {
+  font-size: 3em;
+  color: #fff;
+  padding-top: 15px;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+  color: aliceblue;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.7em;
+}
+
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  padding: 2em;
+  background-color: rgb(158, 157, 153);
+}
+
+.footer-content h2 {
+  font-size: 3em;
+  color: #fff;
+  padding-top: 15px;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+  color: aliceblue;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
+
+/* media queries */
+
+@media screen and (max-width: 800px) {
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: #c4bfbfb4;
+        z-index: 1;
+        transform: translateX(-110%);
+        transition: all .5s ease-in-out;
+    }
+
+     .mostrarMenu{
+        transform: translateX(0%);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu li {
+        margin: 2em;
+    }
+
+  .toggleMenu {
+        display: block;
+    }
+
+   .fa-bars {
+        font-size: 1.5em;
+    }
+
+    .toggleMenu .fa-close{
+        font-size: 1.7em;
+        display: none;
+    }
+
+    .brand img{
+        width: 40%;
+    }
+    
+
+    .main,
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-info {
+        box-shadow: none
+    }
+
+    .info-contentP{
+        display: none;
+    }
+    
+    .download-cv{
+        display: none;
+    }
+
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+
+    .main img{
+        width: min(80%, 300px);
+    }
+
+    .info-content .sotial-networks1{
+        display: flex;
+        gap: 50px;
+        margin-bottom: 30px;
+    }
+
+    .info-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactoImg{
+        display: none;
+    }
+
+    .form-group{
+        width: 70%;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footer-content h2 {
+        font-size: 1.5em;
+        padding: center center;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .footer-content h5 {
+        font-size: .75em;
+        text-align: center;
+        color: aliceblue;
+      }
+}
